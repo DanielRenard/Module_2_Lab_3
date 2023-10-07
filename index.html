@@ -8,6 +8,51 @@
     <meta name="author" content="[Your name]" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        /* justify-content: flex-start;
+        align-items: stretch;
+        align-content: flex-start;
+        flex-flow: row; */
+      }
+
+      .flex-item-1 {
+        flex: 14;
+      }
+
+      .flex-item-2 {
+        flex: 12;
+        flex-grow: 10;
+      }
+
+      .flex-item-3 {
+        flex: 13;
+        flex-shrink: 5;
+        order: 1
+      }
+
+      .flex-item-4 {
+        flex: 15;
+        flex-basis: 5px;
+        align-self: center;
+      }
+
+      .flex-center {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-space-between {
+        justify-content: space-between;
+      }
+      
+      .flex-basis-item-50 {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+      }
+
       .background-1 {
         background: #68B0AB;
       }
